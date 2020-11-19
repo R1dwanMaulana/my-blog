@@ -1,0 +1,39 @@
+import BlogPost from '../../../components/BlogPost'
+
+export const meta = {
+  image: 'https://images.unsplash.com/photo-1513258496099-48168024aec0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80',
+  title: 'syntax di ES6',
+  description: '',
+  date: 'Nov 16, 2020',
+  readTime: 5
+}
+
+export default ({ children }) => <BlogPost meta={meta}>{children}</BlogPost>;
+
+## What is ES6 ?
+Menurut sejarah, sebenarnya pada tahun 1995 Netscape melahirkan bahasa pemrograman ini dengan nama “LiveScript”, namun pada saat itu bahasa pemrograman Java sedang populer. 
+
+Netspace dan Sun selaku pengembang bahasa pemrograman Java (saat ini Oracle) melakukan perjanjian lisensi dan mengubah penamaan LiveScript menjadi JavaScript. Setelah diadopsi di luar Netscape, JavaScript distandarisasi oleh European Computer Manufacturer’s Association (ECMA). Itulah sebabnya terkadang ada yang menyebutnya dengan ECMAScript.
+
+Terdapat beberapa versi dari JavaScript. Pada tahun 2000 - 2010, ECMAScript 3 (ES3) merupakan versi yang banyak digunakan ketika JavaScript sedang mendominasi. Selama waktu tersebut, ECMAScript 4 (ES4) sedang dalam proses pengembangan dengan harapan akan memberikan improvisasi yang cukup signifikan, namun ambisi tersebut tidak berjalan mulus sehingga pada tahun 2008 pengembangan ES4 ditinggalkan. 
+
+Walaupun begitu, itu bukan akhir dari JavaScript. Pengembangan digantikan dengan ECMAScript 5 (ES5) dengan mengurangi ambisinya. Seperti apa? perbaikan hanya terbatas pada hal non-kontroversial. Pembaruan tersebut berhasil dan akhirnya ES5 pun rilis pada tahun 2009.
+
+Akhirnya pada tahun 2015 ECMAScript 6 (ES6) rilis dengan membawa perubahan yang cukup besar termasuk ide - ide yang sudah direncanakan untuk versi 4.
+
+## Apa saja yang baru ?
+✅ deklarasi variabel menggunakan `let` & `const`
+```sh
+    let name = "tim";
+    name = "cook";
+
+    console.log(name);  // cook
+  }
+```
+```sh
+    const name = "tim";
+    name = "cook";
+    
+    console.log(name); // TypeError: Assigment to constant variable
+```
+
